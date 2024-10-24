@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    transition: background-color 1s ease-in-out;
+}
+
+:root {
+    --clr-dark: #2d2d2d;
+    --clr-yellow-shining: rgba(255, 255, 0, 0.9);
+}
+
+main {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.light {
+    background-color: white;
+}
+
+.dark {
+    background-color: var(--clr-dark);
+}
+
+.good-morning {
+    background-color: white;
+    padding: 1rem 3rem;
+    border: .5rem solid black;
+    border-radius: .25rem;
+    transition: background-color 1s ease-in-out, border-color 1s ease-in-out, box-shadow 1s ease-in-out;
+}
+
+.good-night {
+    background-color: var(--clr-dark);
+    color: white;
+    border: .5rem solid white;
+    box-shadow: 0 0 10px 5px var(--clr-yellow-shining);
+    transition: background-color 1s ease-in-out, border-color 1s ease-in-out, box-shadow 1s ease-in-out;
+}
